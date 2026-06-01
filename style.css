@@ -1,0 +1,759 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, sans-serif;
+}
+
+/* =========================================================
+BODY
+========================================================= */
+
+body{
+
+    background:#f4f4f4;
+
+    overflow-x:hidden;
+
+}
+
+/* =========================================================
+NAVBAR
+========================================================= */
+
+.navbar-custom{
+
+    background:rgba(0,0,0,0.20);
+
+    backdrop-filter:blur(15px);
+
+    border-bottom:
+    1px solid rgba(255,255,255,0.1);
+
+    padding:10px 0;
+
+}
+
+/* =========================================================
+LOGO
+========================================================= */
+
+.navbar-brand{
+
+    color:white !important;
+
+}
+
+.navbar-brand strong{
+
+    font-size:1.4rem;
+
+}
+
+/* =========================================================
+SEARCH BOX
+========================================================= */
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    rgba(255,255,255,0.10);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:50px;
+
+    padding:8px 20px;
+
+    width:350px;
+
+}
+
+.search-box input{
+
+    background:transparent;
+
+    border:none;
+
+    outline:none;
+
+    width:100%;
+
+    color:white;
+
+}
+
+.search-box input::placeholder{
+
+    color:white;
+
+}
+
+.search-box button{
+
+    border:none;
+
+    background:transparent;
+
+    color:white;
+
+    font-size:1.1rem;
+
+}
+
+/* =========================================================
+CLIMA
+========================================================= */
+
+.weather-box{
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:0.9rem;
+
+}
+
+/* =========================================================
+REDES SOCIAIS
+========================================================= */
+
+.social-icons a{
+
+    color:white;
+
+    margin-left:15px;
+
+    font-size:1.2rem;
+
+    transition:0.3s;
+
+}
+
+.social-icons a:hover{
+
+    color:#ffd500;
+
+}
+
+/* =========================================================
+HERO
+========================================================= */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+
+    url("img/tab.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+/* =========================================================
+OVERLAY
+========================================================= */
+
+.hero-overlay{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    background: 
+    linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.5)
+    );
+
+}
+
+/* =========================================================
+CONTEÚDO HERO
+========================================================= */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+/* =========================================================
+GLASS EFFECT
+========================================================= */
+
+.glass{
+
+    background:
+    rgba(255,255,255,0.10);
+
+    backdrop-filter:blur(15px);
+
+    border:
+    1px solid rgba(255,255,255,0.1);
+
+    border-radius:25px;
+
+    padding:40px;
+
+}
+
+/* =========================================================
+TEXTOS HERO
+========================================================= */
+
+.hero-text h1{
+
+    font-size:5rem;
+
+    font-weight:bold;
+
+}
+
+.hero-text h2{
+
+    font-size:3rem;
+
+    color:#ffd500;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text p{
+
+    font-size:1.2rem;
+
+}
+
+/* =========================================================
+MENU LINKS
+========================================================= */
+
+.menu-links{
+
+    background:#0047ab;
+
+    padding:20px 0;
+
+}
+
+.menu-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+.menu-links a:hover{
+
+    color:#ffd500;
+
+}
+
+/* =========================================================
+SEÇÕES
+========================================================= */
+
+section{
+
+    padding:100px 0;
+
+}
+
+/* =========================================================
+TÍTULOS
+========================================================= */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    font-size:2.5rem;
+
+    color:#0047ab;
+
+    font-weight:bold;
+
+}
+
+/* =========================================================
+MAPA
+========================================================= */
+
+.map-box{
+
+    height:400px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:2rem;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ),
+    url("https://static.vecteezy.com/ti/vetor-gratis/p1/2273752-fundo-de-mapa-da-cidade-gratis-vetor.jpg");
+
+    background-size:cover;
+
+    border-radius:20px;
+
+}
+
+/* =========================================================
+CAROUSEL
+========================================================= */
+
+.carousel-item img{
+
+    height:600px;
+
+    object-fit:cover;
+
+}
+
+.carousel-caption{
+
+    bottom:40px;
+
+}
+
+/* =========================================================
+PRODUTOS
+========================================================= */
+
+.produto-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:0.4s;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+.produto-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.produto-card img{
+
+    height:300px;
+
+    object-fit:cover;
+
+}
+
+/* =========================================================
+FOOTER
+========================================================= */
+
+footer{
+
+    background:#002c68;
+
+    color:white;
+
+    padding:80px 0;
+
+}
+
+/* =========================================================
+BOTÕES
+========================================================= */
+
+.btn{
+
+    border-radius:50px;
+
+    padding:12px 30px;
+
+    font-weight:bold;
+
+}
+
+/* =========================================================
+MODAL
+========================================================= */
+
+.modal-content{
+
+    border-radius:25px;
+
+    border:none;
+
+}
+
+/* =========================================================
+AVALIAÇÕES
+========================================================= */
+
+#avaliacoes .glass{
+
+    margin-bottom:20px;
+
+}
+
+/* =========================================================
+RESPONSIVIDADE
+========================================================= */
+
+@media(max-width:991px){
+
+    .search-box{
+
+        width:100%;
+
+        margin:20px 0;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero-text h1{
+
+        font-size:3rem;
+
+    }
+
+    .hero-text h2{
+
+        font-size:2rem;
+
+    }
+
+    .hero-text p{
+
+        font-size:1rem;
+
+    }
+
+    .glass{
+
+        padding:25px;
+
+    }
+
+    .carousel-item img{
+
+        height:350px;
+
+    }
+
+}
+
+/* =========================================================
+EVENTOS
+========================================================= */
+
+.evento-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:0.4s;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+.evento-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.evento-card img{
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+/* =========================================================
+NOTÍCIAS
+========================================================= */
+
+.news-main{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+.news-main img{
+
+    width:100%;
+
+    height:450px;
+
+    object-fit:cover;
+
+}
+
+.news-content{
+
+    padding:30px;
+
+}
+
+.news-side{
+
+    display:flex;
+
+    gap:15px;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,0.08);
+
+}
+
+.news-side img{
+
+    width:140px;
+
+    height:120px;
+
+    object-fit:cover;
+
+}
+
+/* =========================================================
+MODAL
+========================================================= */
+
+.modal-content{
+
+    border-radius:25px;
+
+    border:none;
+
+}
+
+.modal-body img{
+
+    max-height:300px;
+
+    object-fit:cover;
+
+}
+
+
+
+/* =========================================================
+FOOTER GUPY STYLE
+========================================================= */
+
+.grupo-box{
+
+    width:100%;
+
+    height:450px;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+}
+
+.grupo-box img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* =========================================================
+AVALIAÇÕES
+========================================================= */
+
+#avaliacoes{
+
+    margin-top:50px;
+
+}
+
+#avaliacoes .glass{
+
+    transition:0.4s;
+
+}
+
+#avaliacoes .glass:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* =========================================================
+MODAIS
+========================================================= */
+
+.modal-content{
+
+    border:none;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.modal-body{
+
+    background:white;
+
+}
+
+.modal-body img{
+
+    max-height:300px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+}
+
+/* =========================================================
+NOTÍCIAS MAIS PROFISSIONAIS
+========================================================= */
+
+.news-main{
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.1);
+
+}
+
+.news-main img{
+
+    width:100%;
+
+    height:450px;
+
+    object-fit:cover;
+
+}
+
+.news-content{
+
+    padding:30px;
+
+}
+
+.news-side{
+
+    display:flex;
+
+    gap:15px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+.news-side img{
+
+    width:150px;
+
+    height:130px;
+
+    object-fit:cover;
+
+}
